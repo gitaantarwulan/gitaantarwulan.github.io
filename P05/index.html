@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <h1 class="text-center m-5 ">jQuery : Delete tabel row on button click</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        tr{
+            background: rgb(69, 100, 129);
+            cursor: pointer;
+            transition: .2s;
+        }
+        tr:hover{
+            background: rgb(117, 98, 70);
+        }
+        td{
+            background: rgb(150, 126, 172);
+            cursor: pointer;
+            transition: .2s;
+        }
+        td:hover{
+            background: rgb(206, 142, 142);
+        }
+        .tabelsaya{
+            width: 100%;
+            max-width: 400px;
+        }
+    </style>
+    <div class="row">
+        <div class="col-12">
+            <table class="tabel">
+                <tr>
+                    <th>Sr</th>
+                    <th>Nama Kawan</th>
+                    <th>Alamat</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr id="row__1">
+                <td>1</td>
+                <td>Endah Nur Apriyani</td>
+                <td>Mertasinga</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__2">
+                <td>2</td>
+                <td>Vani Juliyanti</td>
+                <td>Plered</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__3">
+                <td>3</td>
+                <td>Lili Nurindah Sari</td>
+                <td>Depok</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__4">
+                <td>4</td>
+                <td>Rafli Prihadi Ardana</td>
+                <td>Siliwangi</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__5">
+                <td>5</td>
+                <td>Irwansyah</td>
+                <td>Gunung Jati</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__6">
+                <td>6</td>
+                <td>Cica Reni</td>
+                <td>Cideng</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__7">
+                <td>7</td>
+                <td>M.Nazar.A</td>
+                <td>Plered</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__8">
+                <td>8</td>
+                <td>Feriyasyah</td>
+                <td>Bandung</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+               <tr id="row__9">
+                <td>9</td>
+                <td>M.Nasihul.A</td>
+                <td>Plered</td>
+                <td><button class="hapus">Hapus</button></td>
+               </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
