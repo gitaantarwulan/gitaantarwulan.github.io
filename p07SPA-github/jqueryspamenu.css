@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(Poppins-Medium.otf);
+}
+@font-face {
+  font-family: "Pacifico-Regular";
+  src: url(Pacifico-Regular.ttf);
+}
+
+body {
+  background-color: #41436a;
+  padding: 0px;
+  margin: 0px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  position: absolute;
+  background-color: burlywood;
+  width: 100%;
+  height: 4rem;
+}
+
+.navbar1 {
+  font-size: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.navbar2 {
+  font-family: "Poppins-Medium";
+  font-size: 18px;
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 30rem;
+  list-style: none;
+}
+
+.logo {
+  font-family: "Pacifico-Regular";
+  position: absolute;
+  margin-left: 70px;
+  margin-top: -2px;
+  padding: top 5px;
+  font-size: 30px;
+  list-style-type: none;
+}
+
+.isi__1,
+.isi__2,
+.isi__3,
+.isi__4 {
+  background-color: white;
+  border: solid 1px white;
+  padding-top: 8rem;
+  display: none;
+  color: black;
+  font-family: calibri;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px gray;
+}
+
+.active {
+  font-weight: bold;
+}
+
+nav .animation{
+  position: absolute;
+  height: 100%;
+  /* height: 5px; */
+  top: 0;
+  /* bottom: 0; */
+  z-index: 0;
+  background: burlywood;
+  border-radius: 8px;
+  transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+  width: 130px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+  width: 100px;
+  left: 15px;
+}
+nav a:nth-child(2){
+  width: 115px;
+}
+nav a:nth-child(2):hover~.animation{
+  width: 90px;
+  left: 142px;
+}
+nav a:nth-child(3){
+  width: 120px;
+}
+nav a:nth-child(3):hover~.animation{
+  width: 100px;
+  left: 255px;
+} 
+#home {
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: ubuntu;
+}
+#about , #contact{
+  margin-bottom: 5px;
+  text-align: center;
+}
+#about{
+  font-family: Ubuntu;
+}
+#project{
+  text-align: center;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#project > .tombol1{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.tombol{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.115);
+  color: #7868e6;
+  overflow: hidden;
+  position: relative;
+}
+.tombol i{
+  line-height: 70px;
+  font-size: 30px;
+  transition: 0.2s linear;
+}
+ .tombol1{
+  margin-top: 20px;
+  background-color: burlywood;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.grid-main{
+  grid-area: main;
+  box-sizing: border-box;
+  background: burlywood;
+  width: 100%;
+}
+marquee{
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 45px;
+  font-family: 'Ubuntu', cursive;
+}
+.item2, .item3{
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 20px;
+}
+.grid-footer{
+  grid-area: footer;
+  height: 100px;
+  background-color: #34495e;
+  color: white;
+  position: relative;
+}
+.item1 > img{
+  width: 6cm;
+  height: 6cm;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  border: 1px solid #0000;
+  position: block;
+}
+.namabawah{
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 20px;
+}
+.main{
+  justify-content: center;
+  padding-top: 30px;
+}
+@media only screen and (min-width: 460px) and (max-width:600px) {
+  .grid-header{
+    width: 100%;
+  }
+  .grid-main{
+    width: 100%;
+  }
+  .grid-footer{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px){
+ .grid-header{
+    width: 100%;
+  }
+  .grid-main{
+    width: 100%;
+  }
+  .grid-footer{
+    width: 100%;
+  }
+  
+}
+@media only screen and (min-width: 768px){
+.grid-header{
+  width: 100%;
+}
+  .grid-main{
+    width: 100%;
+  }
+  ul{
+    margin-left: 555px;
+  }
+  .grid-footer{
+    width: 100%;
+  }
+@media only screen and (min-width: 992px){
+  .grid-header{
+    width: 100%;
+  }
+  .grid-main{
+    width: 100%;
+  }
+  .grid-footer{
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px){
+   .grid-header{
+    width: 100%;
+  }
+  .grid-main{
+    width: 100%;
+  }
+  .grid-footer{
+    width: 100%;
+  }
+}
+}
