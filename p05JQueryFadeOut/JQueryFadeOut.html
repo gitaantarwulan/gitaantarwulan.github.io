@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p05 jquery Fade Out</title>
+    <style type="text/css">
+        body{
+            background-color: rgb(89, 146, 211);
+            text-align: center;
+        }
+        table, th, td{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        table{
+            border: transparent;
+            border: solid;
+        }
+        td{
+            background-color: rgb(116, 214, 165);
+            color: white;
+        }
+        th, td{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 40px;
+        }
+        table tbody tr:hover td{
+            background-color: steelblue;
+            border-color:black;
+            transisition: all .3s;
+        }
+    </style>
+</head>
+<body>  
+    <table style="margin-left: auto;margin-right: auto;">
+     <tbody>
+        <tr>
+            <th colspan="6" bgcolor="lightblue">5 Best Friend</th>
+        
+        </tr>    
+        <tr>
+            <td>No</td>
+            <td>Nama</td>
+            <td>No.Telp</td>
+            <td>Alamat</td>
+            <td colspan="2">Aksi</td>
+        </tr>
+        <tr id="baris__1">
+            <td align="center">1</td>
+            <td class="data" id="nama_mhs__1">Dani Feriyansyah</td>
+            <td class="data" id="no_telp__1">081231223453</td>
+            <td class="data" id="alamat__1">Cirebon</td>
+            <td class="data tengah" id=hapus__1>Hapus</td>  
+        </tr>
+        <tr id="baris__2">
+            <td align="center">2</td>
+            <td class="data" id="nama_mhs__2">Marsya</td>
+            <td class="data" id="no_telp__2">087634352292</td>
+            <td class="data" id="alamat__2">Jakarta</td>
+            <td class="data tengah" id=hapus__2>Hapus</td>
+        </tr>
+        <tr id="baris__3">
+            <td align="center">3</td>
+            <td class="data" id="nama_mhs__3">Dikdik Fadil</td>
+            <td class="data" id="no_telp__3">087254321648</td>
+            <td class="data" id="alamat__3">Bandung</td>
+            <td class="data tengah" id=hapus__3>Hapus</td>
+        </tr>
+        <tr id="baris__4">
+            <td align="center">4</td>
+            <td class="data" id="nama_mhs__4">Winda Clara</td>
+            <td class="data" id="no_telp__4">082123415432</td>
+            <td class="data" id="alamat__4">Toraja</td>
+            <td class="data tengah" id=hapus__4>Hapus</td>
+        </tr>
+        <tr id="baris__5">
+            <td align="center">5</td>
+            <td class="data" id="nama_mhs__5">Arlindah</td>
+            <td class="data" id="no_telp__5">089764432123</td>
+            <td class="data" id="alamat__5">Tasikmalaya</td>
+            <td class="data tengah" id=hapus__5>Hapus</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+
+    <div id="tombol" class="tombol-back-bestie">
+        <a onclick="alert('Kamu mau kembali?')" href="latihanhtmlweb/index.html"
+          >Back to Home</a
+        >
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<html>
